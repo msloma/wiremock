@@ -63,7 +63,7 @@ public  String body = "{\n" +
 		ResponseEntity<String> response = restTemplate.getForEntity(url+"/users/1",String.class);
 
 		assertNotNull(response);
-		//System.out.println(response);
+		System.out.println(response);
 		/*verify(getRequestedFor(urlMatching("/users/[a-z0-9]+"))
 				.withHeader("Content-Type", notMatching("application/json")));*/
 	}
