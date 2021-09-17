@@ -49,7 +49,7 @@ public  String body = "{\n" +
 
 
 	@Test
-	@Description("test wiremock")
+	@Description("test wiremock 1")
 	public void exampleTest() {
 		stubFor(get(urlEqualTo("/users/1"))
 				.withHeader("Accept", equalTo("text/plain, application/json, application/*+json, */*"))
