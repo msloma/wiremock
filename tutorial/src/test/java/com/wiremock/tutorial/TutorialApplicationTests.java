@@ -64,8 +64,8 @@ public  String body = "{\n" +
 
 		assertNotNull(response);
 		System.out.println(response);
-		/*verify(getRequestedFor(urlMatching("/users/[a-z0-9]+"))
-				.withHeader("Content-Type", notMatching("application/json")));*/
+		verify(getRequestedFor(urlMatching("/users/[a-z0-9]+"))
+				.withHeader("Content-Type", notMatching("application/json")));
 	}
 
 }
